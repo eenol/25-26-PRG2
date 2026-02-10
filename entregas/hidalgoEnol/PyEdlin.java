@@ -1,4 +1,13 @@
 public class PyEdlin {
+
+    public static void mostrarLineas(String[] lineas) {
+        System.out.println("--------------------------------------------------");
+        for (int i = 0; i < lineas.length; i++) {
+            System.out.println(i + ": | " + lineas[i]);
+        }
+        System.out.println("--------------------------------------------------");
+    }
+
     public static void main(String[] args) {
 
         String[] lineas = new String[10];
@@ -7,6 +16,6 @@ public class PyEdlin {
             lineas[i] = "";
         }
 
-        System.out.println("Bienvenido a pyEdlin");
+        mostrarLineas(lineas);
     }
 }
