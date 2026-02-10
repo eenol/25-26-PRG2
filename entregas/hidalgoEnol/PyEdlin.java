@@ -22,10 +22,16 @@ public class PyEdlin {
 
         while (true) {
             mostrarLineas(lineas, lineaActiva);
-            System.out.print("Comando (S para salir): ");
+            System.out.print("Comando: ");
             String cmd = sc.nextLine().toUpperCase();
 
             if (cmd.equals("S")) break;
+
+            if (cmd.equals("L")) {
+                System.out.print("Nueva linea: ");
+                int nueva = Integer.parseInt(sc.nextLine());
+                if (nueva >= 0 && nueva < 10) lineaActiva = nueva;
+            }
         }
     }
 }
