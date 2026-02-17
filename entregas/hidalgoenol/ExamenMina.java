@@ -71,19 +71,13 @@ public class ExamenMina{
 				System.out.println("Ingrese Y");
 				posX = scan.nextInt();
 
-				if(posX>5){
-
-					valoresCorrectos=0;
-				}
-				else if(posY>7){
-
-					valoresCorrectos=0;
+				if(posX < 1 || posX > 5 || posY < 1 || posY > 7){
+    				System.out.println("Coordenadas incorrectas");
+    				valoresCorrectos = 0;
 				}
 				else{
-
-					valoresCorrectos=1;
+    				valoresCorrectos = 1;
 				}
-			}
 
 			if(mapaMinasActivas[posX][posY].equals("1")){
 
