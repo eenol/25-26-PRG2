@@ -39,7 +39,6 @@ public class ExamenMina{
 			}
 			else {
 
-				// AQUÍ ESTÁ EL CAMBIO (quitado +1)
 				mapaMinasActivas[PosXMina][PosYMina] = "1";
 			}
 
