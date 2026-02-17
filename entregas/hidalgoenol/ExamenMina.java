@@ -81,7 +81,7 @@ public class ExamenMina{
 
 			if(mapaMinasActivas[posX][posY].equals("1")){
 
-				mapaMinasMostrar[posX][posY]="x";
+				mapaMinasMostrar[posX][posY]="*";
 				contadorMinas++;
 			}
 
