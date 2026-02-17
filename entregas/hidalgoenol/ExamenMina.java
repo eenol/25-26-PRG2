@@ -65,10 +65,10 @@ public class ExamenMina{
 
 				System.out.println(" ");
 				System.out.println("Ingrese X");
-				posY = scan.nextInt();
+				posX = scan.nextInt();
 
 				System.out.println("Ingrese Y");
-				posX = scan.nextInt();
+				posY = scan.nextInt();
 
 				if(posX < 1 || posX > 5 || posY < 1 || posY > 7){
     				System.out.println("Coordenadas incorrectas");
