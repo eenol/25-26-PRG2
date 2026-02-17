@@ -83,11 +83,15 @@ public class ExamenMina{
 
 				mapaMinasMostrar[posX][posY]="*";
 				contadorMinas++;
+				System.out.println("Mina!");
+
 			}
 
 			else if(mapaMinasActivas[posX][posY].equals("0")){
 
 				mapaMinasMostrar[posX][posY]=".";
+				System.out.println("Libre!");
+
 			}
 
 			else{
